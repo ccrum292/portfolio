@@ -1,0 +1,60 @@
+/* -------------------------------- */
+/* All */
+.nav-row {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+i {
+  cursor: pointer;
+
+}
+
+.arrows,
+#theme-heading {
+  display: inline;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ee6e73;
+}
+
+/* #theme-heading {
+  
+} */
+
+#theme-div {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+
+
+/* -------------------------------- */
+/* Dark Theme (DT) */
+
+
+
+/* -------------------------------- */
+/* 80's Theme (80) */
+
+
+
+/* -------------------------------- */
+/* Windows 95 Theme (Win95) */
+
+
+
+/* -------------------------------- */
+/* Spaceman Theme (SP) */
+
+
+
+/* -------------------------------- */
+/* Sketch Theme (SK) */
+
+
+
+/* -------------------------------- */
