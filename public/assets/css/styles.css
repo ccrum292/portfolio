@@ -1,9 +1,5 @@
 /* -------------------------------- */
 /* All */
-h2, 
-h4 {
-  color: #ee6e73;
-}
 .nav-row {
   position: fixed;
   bottom: 0;
@@ -25,14 +21,24 @@ i {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: #ee6e73;
+  /* color: #ee6e73; */
   opacity: 75%;
   border-radius: 4px;
 }
 
 .underlined-text {
-  border-bottom: 1px solid #ee6e73;
-  color: #ee6e73;
+  border-bottom: 1px solid #2196F3 !important;
+  /* color: #ee6e73; */
+  padding-bottom: 5px;
+}
+
+.underlined-text2 {
+  border-bottom: 1px solid #4CAF50 !important;
+  padding-bottom: 5px;
+}
+
+.underlined-text3 {
+  border-bottom: 1px solid #F44336 !important;
   padding-bottom: 5px;
 }
 
@@ -41,6 +47,13 @@ img {
   width: 70%; */
   border-radius: 4px;
   
+}
+
+#picture-of-self {
+  border-top: 4px solid  #F44336 !important;
+  border-right: 4px solid  #ffc107 !important;
+  border-bottom: 4px solid  #4CAF50 !important;
+  border-left: 4px solid  #2196F3 !important;
 }
 
 .img-col {
@@ -83,6 +96,47 @@ button {
 #carousel-item-1 {
   background-image: url("../img/exquisite-art-homepage.gif");
   background-size: 100% 100%;
+}
+
+.first-project-carousel {
+  border-right: 4px solid  #F44336 !important;
+  border-bottom: 4px solid  #ffc107 !important;
+  border-left: 4px solid  #4CAF50 !important;
+  border-top: 4px solid  #2196F3 !important;
+}
+
+.second-project-carousel {
+  border-bottom: 4px solid  #F44336 !important;
+  border-left: 4px solid  #ffc107 !important;
+  border-top: 4px solid  #4CAF50 !important;
+  border-right: 4px solid  #2196F3 !important;
+}
+
+.third-project-carousel {
+  border-left: 4px solid  #F44336 !important;
+  border-top: 4px solid  #ffc107 !important;
+  border-right: 4px solid  #4CAF50 !important;
+  border-bottom: 4px solid  #2196F3 !important;
+}
+
+.alter-heading-1,
+.alter-text-4 {
+  color: #F44336 !important;
+}
+
+.alter-heading-2,
+.alter-text-1 {
+  color: #ffc107 !important;
+}
+
+.alter-heading-3,
+.alter-text-2 {
+  color: #4CAF50 !important;
+}
+
+.alter-heading-4,
+.alter-text-3 {
+  color: #2196F3 !important;
 }
 
 /* .indicator-item {

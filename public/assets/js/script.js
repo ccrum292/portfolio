@@ -15,6 +15,7 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy({
     scrollOffset: 0
   });
+  $('.tooltipped').tooltip();
   // $(".indicator-item").css('background-color','blue')
   // $(".indicator-item.active").css('background-color','black')
 });
@@ -78,11 +79,27 @@ const getComments = () => {
     <div style="margin-bottom: 50px" id="comments-div" class="row"></div>
     `);
     $("#main-container-body").append(commentsDiv);
+    let cssStyleHeading = "alter-heading-4";
+    let cssStyleText = "alter-text-4";
     data.forEach(val => {
+      // it else statement used to change color of heading and text for each entry
+      if(cssStyleHeading === "alter-heading-1"){
+        cssStyleHeading = "alter-heading-2";
+        cssStyleText = "alter-text-2";
+      }else if(cssStyleHeading === "alter-heading-2"){
+        cssStyleHeading = "alter-heading-3";
+        cssStyleText = "alter-text-3";
+      }else if(cssStyleHeading === "alter-heading-3"){
+        cssStyleHeading = "alter-heading-4";
+        cssStyleText = "alter-text-4";
+      }else if(cssStyleHeading === "alter-heading-4"){
+        cssStyleHeading = "alter-heading-1";
+        cssStyleText = "alter-text-1";
+      }
       $("#comments-div").prepend(`
       <div class="col s12 m12 l12 xl12">
-        <h5 class="right-align">${val.name}</h5>
-        <p class="right-align">${val.text}</p>
+        <h5 class="right-align ${cssStyleHeading}">${val.name}</h5>
+        <p class="right-align ${cssStyleText}">${val.text}</p>
       </div>
       `)
     })
@@ -109,3 +126,10 @@ $("#submitComment").on("click", event => {
 
 $(".indicator-item").css('background-color','blue')
 $(".indicator-item.active").css('background-color','black')
+
+// TRYING to fix weird bug with nav tabs
+// $(".tab").on("click", event => {
+//   event.preventDefault();
+//   console.log("hit")
+//   $(".click-me").click();
+// })

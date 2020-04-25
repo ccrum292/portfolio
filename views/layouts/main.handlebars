@@ -19,14 +19,14 @@
   <body>
     <div id="top-of-page" class="scrollspy" style="display: none;"></div>
     <div class="">
-      <h2 style="margin-bottom: 5px; margin-top: 25px" class="center-align">Caleb Crum</h2>
+      <h2 style="margin-bottom: 5px; margin-top: 25px" class="center-align"><span class="red-text">C</span><span class="amber-text">a</span><span class="green-text">l</span><span class="blue-text">e</span><span class="red-text">b</span> <span class="amber-text">C</span><span class="green-text">r</span><span class="blue-text">u</span><span class="red-text">m</span></h2>
     </div>
 
     <div style="margin-bottom: 0px" class="row">
       <div id="theme-div" class="col s12 m4 l4 xl4 offset-m4 offset-l4 offset-xl4">
-        <i class="material-icons hoverable center-align arrows">arrow_back</i>
-        <h4 id="theme-heading" class="center-align">Theme</h4>
-        <i class="material-icons hoverable center-align arrows">arrow_forward</i>
+        <i class="material-icons hoverable center-align amber-text arrows tooltipped" data-position="bottom" data-tooltip="Change Theme">arrow_back</i>
+        <h4 id="theme-heading" class="center-align"><span class="green-text">Color</span> <span class="blue-text">Theme</span></h4>
+        <i class="material-icons hoverable center-align red-text arrows tooltipped" data-position="bottom" data-tooltip="Change Theme">arrow_forward</i>
       </div>
     </div>
 
@@ -37,15 +37,18 @@
     <div class="row nav-row">
       <div class="col s12">
         <ul id="bottom-tabs" class="tabs">
-          <li class="tab col s4 m4 l4 xl4 hoverable"><a class="active" href="#top-of-page"><i class="material-icons center-align">home</i></a></li>
-          <li class="tab col s4 m4 l4 xl4 hoverable"><a href="#start-of-portfolio"><i class="material-icons center-align">palette</i></a></li>
-          <li class="tab col s4 m4 l4 xl4 hoverable"><a href="#start-of-comments"><i class="material-icons center-align">comment</i></a></li>
+          <li class="tab col s4 m4 l4 xl4 hoverable"><a class="active amber-text" href="#top-of-page">Home</a></li>
+          <li class="tab col s4 m4 l4 xl4 hoverable"><a href="#start-of-portfolio" class="red-text" >Portfolio</a></li>
+          <li class="tab col s4 m4 l4 xl4 hoverable"><a href="#start-of-comments" class="green-text">Comments</a></li>
         </ul>
       </div>
-      {{!-- <div id="test1" class="col s12">Test 1</div>
-      <div id="test2" class="col s12">Test 2</div>
-      <div id="test3" class="col s12">Test 3</div>
-      <div id="test4" class="col s12">Test 4</div> --}}
+      
+      {{!-- USE LATER IF POSSIBLE --}}
+      {{!-- <i class="material-icons center-align amber-text">home</i>
+      <i class="material-icons center-align red-text">palette</i>
+      <i class="material-icons center-align green-text">comment</i> --}}
+
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>            

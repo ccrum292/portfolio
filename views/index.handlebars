@@ -3,8 +3,8 @@
 
 <div class="row">
   <div class="col">
-    <h4 class="underlined-heading">About Me</h4>
-    <p class="underlined-text">
+    <h4 class="underlined-heading amber-text">About Me</h4>
+    <p class="underlined-text green-text">
       Level-headed, easy going, and inquisitive.
 Full-Stack Web Developer, who leans toward back-end work, successful in collaborative team environments and enjoys producing creative long-term solutions. Proven experience developing web applications using all technologies in SERN and MERN stacks. 
     </p>
@@ -13,13 +13,13 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
 
 <div style="margin-bottom: 0px" class="row">
   <div class="col s12 l6 img-col">
-    <img src="./assets/img/medicMe.png" alt="Headshot of Caleb Crum">
+    <img id="picture-of-self" src="./assets/img/medicMe.png" alt="Headshot of Caleb Crum" class="tooltipped" data-position="bottom" data-tooltip="Me when I worked as a Medic">
   </div>
   <div class="col s12 l6 button-col">
-    <div><button class='modal-trigger hoverable col-button waves-effect' data-target="modal1" ><i class="fas fa-3x fa-envelope"></i></button></div>
-    <div> <form style='display: inline' target='_blank' action="https://github.com/ccrum292" method='get'><button class='hoverable col-button waves-effect'><i class='fab fa-3x fa-github'></i></button></form></div>
-    <div><form style='display: inline' target='_blank' action="https://www.linkedin.com/in/caleb-crum/" method='get'><button class='hoverable col-button waves-effect'><i class='fab fa-3x fa-linkedin-in'></i></button></form></div>
-    <a href="./assets/pdf/Caleb-Crum-Resume.pdf" download="Caleb-Crum-Resume"><button class="hoverable col-button waves-effect"><i class="fas fa-3x fa-file"></i></button></a>
+    <div><button class='modal-trigger hoverable col-button waves-effect red tooltipped' data-position="bottom" data-tooltip="Email" data-target="modal1" ><i class="fas fa-3x fa-envelope green-text"></i></button></div>
+    <div> <form style='display: inline' target='_blank' action="https://github.com/ccrum292" method='get'><button class='hoverable col-button waves-effect amber tooltipped' data-position="bottom" data-tooltip="GitHub"><i class='fab fa-3x fa-github blue-text'></i></button></form></div>
+    <div><form style='display: inline' target='_blank' action="https://www.linkedin.com/in/caleb-crum/" method='get'><button class='hoverable col-button waves-effect green tooltipped' data-position="bottom" data-tooltip="Linkedin"><i class='fab fa-3x fa-linkedin-in red-text'></i></button></form></div>
+    <a href="./assets/pdf/Caleb-Crum-Resume.pdf" download="Caleb-Crum-Resume"><button class="hoverable col-button waves-effect blue tooltipped" data-position="bottom" data-tooltip="Download Resume"><i class="fas fa-3x fa-file amber-text"></i></button></a>
   </div>
 </div>
 
@@ -39,19 +39,71 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
 <div id="start-of-portfolio" class="scrollspy" style="display: none;"></div>
 <div class="row">
   <div class="col l12">
-    <h4 class="underlined-heading right-align">Projects</h4>
-    <p class="underlined-text right-align">
-      Slide the panels below to see multiple projects.
+    <h4 class="underlined-heading right-align red-text">Projects</h4>
+    <p class="underlined-text2 right-align amber-text">
+      Slide the panels below to see project pictures and descriptions.
     </p>
   </div>
 </div>
 
 <div class="row">
-  <div class="col carousel carousel-slider center">
-    <div class="carousel-fixed-item center">
+  <div class="col carousel carousel-slider center first-project-carousel">
+    {{!-- <div class="carousel-fixed-item center">
       <a style="margin-left: 15px" class="btn waves-effect white grey-text darken-text-2 hoverable">Deployed App</a>
       <a style="margin-right: 15px" class="btn waves-effect white grey-text darken-text-2 hoverable">GitHub</a>
+    </div> --}}
+    <div id="carousel-item-1" class="carousel-item white-text active" href="">
+      {{!-- <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p> --}}
+      {{!-- <img style="z-index: -1; width: 75%; padding: 10px; margin: 30px" src="assets/img/exquisite-art-homepage.gif" alt="gif of moving webpage"> --}}
     </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col carousel carousel-slider center second-project-carousel">
+    {{!-- <div class="carousel-fixed-item center">
+      <a style="margin-left: 15px" class="btn waves-effect white grey-text darken-text-2 hoverable">Deployed App</a>
+      <a style="margin-right: 15px" class="btn waves-effect white grey-text darken-text-2 hoverable">GitHub</a>
+    </div> --}}
+    <div id="carousel-item-1" class="carousel-item white-text active" href="">
+      {{!-- <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p> --}}
+      {{!-- <img style="z-index: -1; width: 75%; padding: 10px; margin: 30px" src="assets/img/exquisite-art-homepage.gif" alt="gif of moving webpage"> --}}
+    </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col carousel carousel-slider center third-project-carousel">
+    {{!-- <div class="carousel-fixed-item center">
+      <a style="margin-left: 15px" class="btn waves-effect white grey-text darken-text-2 hoverable">Deployed App</a>
+      <a style="margin-right: 15px" class="btn waves-effect white grey-text darken-text-2 hoverable">GitHub</a>
+    </div> --}}
     <div id="carousel-item-1" class="carousel-item white-text active" href="">
       {{!-- <h2>First Panel</h2>
       <p class="white-text">This is your first panel</p> --}}
@@ -80,8 +132,8 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
 <div id="start-of-comments" class="scrollspy" style="display: none;"></div>
 <div class="row">
   <div class="col">
-    <h4 class="underlined-heading">Comments</h4>
-    <p class="underlined-text">
+    <h4 class="green-text">Comments</h4>
+    <p class="underlined-text3 blue-text">
       Feel free to leave a comment below.
     </p>
   </div>
@@ -92,19 +144,19 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
     <div class="row">
       <div class="input-field col s6">
         <input id="input_text" type="text" data-length="30">
-        <label for="input_text">Name</label>
+        <label class="amber-text" for="input_text">Name</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
         <textarea id="textarea2" class="materialize-textarea" data-length="300"></textarea>
-        <label for="textarea2">Textarea</label>
+        <label class="green-text" for="textarea2">Textarea</label>
       </div>
     </div>
     <div class="row">
       <div class="col s6 m6 l6 xl6">
-        <button style="width: 100%" id="submitComment" class="hoverable waves-effect">
-          <i class="fas fa-3x fa-plus"></i>
+        <button style="width: 100%" id="submitComment" class="hoverable waves-effect tooltipped blue" data-position="bottom" data-tooltip="Submit Comment">
+          <i class="fas fa-3x fa-plus amber-text"></i>
         </button>
       </div>
     </div>
