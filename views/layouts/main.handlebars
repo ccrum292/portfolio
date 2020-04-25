@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2|Cormorant+Infant|Poppins|Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">    
     <link rel="stylesheet" href="assets/css/styles.css">
+    {{!-- <base href="http://localhost:3000/"> --}}
     <title>Caleb Crum's Portfolio</title>
   </head>
 
   <body>
+    <div id="top-of-page" class="scrollspy" style="display: none;"></div>
     <div class="">
-      <h2 style="margin-bottom: 5px" class="center-align">Caleb Crum</h2>
+      <h2 style="margin-bottom: 5px; margin-top: 25px" class="center-align">Caleb Crum</h2>
     </div>
 
     <div style="margin-bottom: 0px" class="row">
@@ -24,17 +30,16 @@
       </div>
     </div>
 
-    <div class="container"> 
+    <div id="main-container-body" class="container"> 
           {{{ body }}} 
     </div>
-  
+
     <div class="row nav-row">
       <div class="col s12">
-        <ul class="tabs">
-          <li class="tab col s3 hoverable"><a class="active" href="#test1"><i class="material-icons center-align">home</i></a></li>
-          <li class="tab col s3 hoverable"><a href="#test2"><i class="material-icons center-align">palette</i></a></li>
-          <li class="tab col s3 hoverable"><a href="#test3"><i class="material-icons center-align">contacts</i></a></li>
-          <li class="tab col s3 hoverable"><a href="#test4"><i class="material-icons center-align">comment</i></a></li>
+        <ul id="bottom-tabs" class="tabs">
+          <li class="tab col s4 m4 l4 xl4 hoverable"><a class="active" href="#top-of-page"><i class="material-icons center-align">home</i></a></li>
+          <li class="tab col s4 m4 l4 xl4 hoverable"><a href="#start-of-portfolio"><i class="material-icons center-align">palette</i></a></li>
+          <li class="tab col s4 m4 l4 xl4 hoverable"><a href="#start-of-comments"><i class="material-icons center-align">comment</i></a></li>
         </ul>
       </div>
       {{!-- <div id="test1" class="col s12">Test 1</div>

@@ -11,15 +11,15 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
   </div>
 </div>
 
-<div class="row">
+<div style="margin-bottom: 0px" class="row">
   <div class="col s12 l6 img-col">
     <img src="./assets/img/medicMe.png" alt="Headshot of Caleb Crum">
   </div>
   <div class="col s12 l6 button-col">
-    <div><button class='modal-trigger hoverable col-button' data-target="modal1" ><i class="fas fa-3x fa-envelope"></i></button></div>
-    <div> <form style='display: inline' target='_blank' action="https://github.com/ccrum292" method='get'><button class='hoverable col-button'><i class='fab fa-3x fa-github'></i></button></form></div>
-    <div><form style='display: inline' target='_blank' action="https://www.linkedin.com/in/caleb-crum/" method='get'><button class='hoverable col-button'><i class='fab fa-3x fa-linkedin-in'></i></button></form></div>
-    <div><a href="./assets/pdf/Caleb-Crum-Resume.pdf" download="Caleb-Crum-Resume"><button class="hoverable col-button"><i class="fas fa-3x fa-file"></i></button></a></div>
+    <div><button class='modal-trigger hoverable col-button waves-effect' data-target="modal1" ><i class="fas fa-3x fa-envelope"></i></button></div>
+    <div> <form style='display: inline' target='_blank' action="https://github.com/ccrum292" method='get'><button class='hoverable col-button waves-effect'><i class='fab fa-3x fa-github'></i></button></form></div>
+    <div><form style='display: inline' target='_blank' action="https://www.linkedin.com/in/caleb-crum/" method='get'><button class='hoverable col-button waves-effect'><i class='fab fa-3x fa-linkedin-in'></i></button></form></div>
+    <a href="./assets/pdf/Caleb-Crum-Resume.pdf" download="Caleb-Crum-Resume"><button class="hoverable col-button waves-effect"><i class="fas fa-3x fa-file"></i></button></a>
   </div>
 </div>
 
@@ -36,7 +36,7 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
 
 
 {{!-- PORTFOLIO SECTION --}}
-
+<div id="start-of-portfolio" class="scrollspy" style="display: none;"></div>
 <div class="row">
   <div class="col l12">
     <h4 class="underlined-heading right-align">Projects</h4>
@@ -72,7 +72,7 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
 
 
 {{!-- COMMENTS --}}
-
+<div id="start-of-comments" class="scrollspy" style="display: none;"></div>
 <div class="row">
   <div class="col">
     <h4 class="underlined-heading">Comments</h4>
@@ -82,7 +82,7 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
   </div>
 </div>
 
-<div class="row">
+<div style="margin-bottom: 0px" class="row">
   <form class="col s12">
     <div class="row">
       <div class="input-field col s6">
@@ -94,6 +94,13 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
       <div class="input-field col s12">
         <textarea id="textarea2" class="materialize-textarea" data-length="300"></textarea>
         <label for="textarea2">Textarea</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6 m6 l6 xl6">
+        <button style="width: 100%" id="submitComment" class="hoverable waves-effect">
+          <i class="fas fa-3x fa-plus"></i>
+        </button>
       </div>
     </div>
   </form>

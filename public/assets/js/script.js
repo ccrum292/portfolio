@@ -11,6 +11,10 @@ $(document).ready(function(){
   darkTheme();
   $('.modal').modal();
   $('input#input_text, textarea#textarea2').characterCounter();
+  getComments();
+  $('.scrollspy').scrollSpy({
+    scrollOffset: 0
+  });
 });
 
 
@@ -54,20 +58,47 @@ $(".copy-button").click(() => copyToClipboard("#email-address"))
 
 // API Calls
 
-const postComments = () => {
-  $.ajax("", {
+const postComments = (name, text) => {
+  $.ajax("/api/comments", {
     type: "POST",
     data: {
-
+      name: name.val().trim(),
+      text: text.val().trim()
     }
   }).then(() => location.reload())
 }
 
 const getComments = () => {
-  $.ajax("", {
-    type: "GET",
-    data: {
-
-    }
-  }).then()
+  $.ajax("/api/comments", {
+    type: "GET"
+  }).then(data => {
+    const commentsDiv = $(`
+    <div style="margin-bottom: 50px" id="comments-div" class="row"></div>
+    `);
+    $("#main-container-body").append(commentsDiv);
+    data.forEach(val => {
+      $("#comments-div").prepend(`
+      <div class="col s12 m12 l12 xl12">
+        <h5 class="right-align">${val.name}</h5>
+        <p class="right-align">${val.text}</p>
+      </div>
+      `)
+    })
+  })
 }
+
+const deleteComments = (id) => {
+  $.ajax("", {
+    type: "DELETE",
+    data: {
+      id: id
+    }
+  })
+}
+
+// Submit Comment Button
+
+$("#submitComment").on("click", event => {
+  event.preventDefault();
+  postComments($("#input_text"), $("#textarea2"));
+})

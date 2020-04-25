@@ -10,7 +10,8 @@ h4 {
   width: 100%;
   /* padding-bottom: 0px; */
   margin-bottom: 2px;
-  opacity: 75%;
+  opacity: 85%;
+  z-index: 3;
 }
 
 i {
@@ -74,7 +75,7 @@ button {
   border-radius: 4px;
 }
 
-.carousel-fixed-item {
+#bottom-tabs, .carousel-fixed-item {
   display: flex;
   justify-content: space-between;
 }
