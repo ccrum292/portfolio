@@ -80,6 +80,18 @@ button {
   justify-content: space-between;
 }
 
+#carousel-item-1 {
+  background-image: url("../img/exquisite-art-homepage.gif");
+  background-size: 100% 100%;
+}
+
+/* .indicator-item {
+  background-color: black;
+}
+
+.indicator-item :active{
+
+} */
 /* -------------------------------- */
 /* Dark Theme (DT) */
 

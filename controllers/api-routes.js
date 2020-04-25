@@ -13,7 +13,7 @@ module.exports = function (app) {
       })
   });
 
-  // 
+  // workin
   app.post("/api/comments", (req, res) => {
     db.Comments.create(req.body)
       .then(dbComments => {
@@ -24,18 +24,19 @@ module.exports = function (app) {
       });
   });
 
-  // must add the correct passNumber for deletion to occur
-  // pass id of Comment in req.body 
-  // ??? do deletes have a body?
-  app.delete("/api/comments/:passNumber", (req, res) => {
-    console.log(req.params.passNumber)
-    if(req.params.passNumber === "292"){
-      return db.Comments.findByIdAndDelete(req.body.id)  
-    }
-    
-    return res
-      .status(403)
-      .send(`Incorrect passNumber given`)
+  // workin
+  app.delete("/api/comments/:id", (req, res) => {
+    db.Comments.findByIdAndDelete(req.params.id)
+      .then(data => {
+        if(!data){
+          return res
+            .status(404)
+            .send(`Comment with Id of ${req.params.id} could not be found.`)
+        }
+
+        return res.json(data)
+      })
+      .catch(err => console.log(err));  
     
   })
 }

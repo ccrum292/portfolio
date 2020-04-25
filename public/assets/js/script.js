@@ -15,6 +15,8 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy({
     scrollOffset: 0
   });
+  // $(".indicator-item").css('background-color','blue')
+  // $(".indicator-item.active").css('background-color','black')
 });
 
 
@@ -102,3 +104,8 @@ $("#submitComment").on("click", event => {
   event.preventDefault();
   postComments($("#input_text"), $("#textarea2"));
 })
+
+// styling
+
+$(".indicator-item").css('background-color','blue')
+$(".indicator-item.active").css('background-color','black')
