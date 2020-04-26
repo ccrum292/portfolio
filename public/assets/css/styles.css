@@ -108,15 +108,47 @@ button {
   background-size: 100% 100%;
 }
 
-.carousel-item-1a {
-  background-image: url("../img/exquisite-art-homepage.gif");
+.carousel-item-2a {
+  background-image: url("../img/homepage.png");
   background-size: 100% 100%;
 }
 
-.carousel-item-1a {
-  background-image: url("../img/exquisite-art-homepage.gif");
+.carousel-item-2b {
+  background-image: url("../img/login.png");
   background-size: 100% 100%;
 }
+
+.carousel-item-2c {
+  background-image: url("../img/completedactions.png");
+  background-size: 100% 100%;
+}
+
+.carousel-item-2d {
+  background-image: url("../img/invitefriends.png");
+  background-size: 100% 100%;
+}
+
+.carousel-item-3a {
+  background-image: url("../img/matchMaker.png");
+  background-size: 100% 100%;
+}
+
+.carousel-item-3b {
+  background-image: url("../img/matchHistory.png");
+  background-size: 100% 100%;
+}
+
+.carousel-item-3c {
+  background-image: url("../img/unicorn.png");
+  background-size: 100% 100%;
+}
+
+.carousel-item-3d {
+  background-image: url("../img/developerContactInfo.png");
+  background-size: 100% 100%;
+}
+
+
 
 .first-project-carousel {
   border-right: 4px solid  #F44336 !important;

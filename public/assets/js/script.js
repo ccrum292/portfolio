@@ -8,7 +8,6 @@ $(document).ready(function(){
   });
   $('.tabs').tabs();
   setButtonColHeight();
-  darkTheme();
   $('.modal').modal();
   $('input#input_text, textarea#textarea2').characterCounter();
   getComments();
@@ -20,15 +19,12 @@ $(document).ready(function(){
   // $(".indicator-item.active").css('background-color','black')
 });
 
+// use later when themes have been added
+// $(".arrows").on("click", changeTheme);
 
-// $('.nav-item').css('background-color','blue');
+// const changeTheme = () => {
 
-// instance.set(3);
-
-const setButtonColHeight = () => {
-  let pictureColHeight = $(".img-col")[0].scrollHeight
-  $(".button-col").css("height", pictureColHeight);
-}
+// }
 
 
 
@@ -41,6 +37,13 @@ anime({
   direction: 'alternate',
   loop: true
 });
+
+
+const setButtonColHeight = () => {
+  let pictureColHeight = $(".img-col")[0].scrollHeight
+  $(".button-col").css("height", pictureColHeight);
+}
+
 
 const copyToClipboard = event => {
   console.log("button clicked")
