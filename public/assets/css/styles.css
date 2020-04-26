@@ -93,7 +93,27 @@ button {
   justify-content: space-between;
 }
 
-#carousel-item-1 {
+.carousel-item-1a {
+  background-image: url("../img/exquisite-art-homepage.gif");
+  background-size: 100% 100%;
+}
+
+.carousel-item-1b {
+  background-image: url("../img/exquisite-art-playpage.gif");
+  background-size: 100% 100%;
+}
+
+.carousel-item-1c {
+  background-image: url("../img/exquisite-corpse-read.png");
+  background-size: 100% 100%;
+}
+
+.carousel-item-1a {
+  background-image: url("../img/exquisite-art-homepage.gif");
+  background-size: 100% 100%;
+}
+
+.carousel-item-1a {
   background-image: url("../img/exquisite-art-homepage.gif");
   background-size: 100% 100%;
 }
@@ -118,6 +138,15 @@ button {
   border-right: 4px solid  #4CAF50 !important;
   border-bottom: 4px solid  #2196F3 !important;
 }
+
+.carousel-text {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+
 
 .alter-heading-1,
 .alter-text-4 {
