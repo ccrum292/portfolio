@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="col">
-    <h4 class="underlined-heading amber-text">About Me</h4>
+    <h4 class="underlined-heading amber-text about-heading">About Me</h4>
     <p class="underlined-text green-text">
       Level-headed, easy going, and inquisitive.
 Full-Stack Web Developer, who leans toward back-end work, successful in collaborative team environments and enjoys producing creative long-term solutions. Proven experience developing web applications using all technologies in SERN and MERN stacks. 
@@ -39,7 +39,7 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
 <div id="start-of-portfolio" class="scrollspy" style="display: none;"></div>
 <div class="row">
   <div class="col l12">
-    <h4 class="underlined-heading right-align red-text">Projects</h4>
+    <h4 class="underlined-heading right-align red-text project-heading">Projects</h4>
     <p class="underlined-text2 right-align amber-text">
       Slide the panels below to see project pictures and descriptions.
     </p>
@@ -49,7 +49,7 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
 {{!-- Think about bringing tooltips back --}}
 <div class="row">
   <div class="col carousel carousel-slider center first-project-carousel">
-    <div data-position="top" data-tooltip="Slide Panel Left or Right for More" class="carousel-item amber white-text carousel-item-div tooltipped" href="">
+    <div data-position="top" data-tooltip="Slide Panel Left or Right for More" class="carousel-item amber white-text carousel-item-div" href="">
       <h2>Exquisite Corpse</h2>
       <p class="white-text carousel-text">The objective of this project was to produce a quirky web app that allows creative writers to connect and collaborate on fun, wacky, stories.</p>
       <h6>Incorporated Technologies</h6>
@@ -71,12 +71,16 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
     </div>
     <div class="carousel-item blue white-text carousel-item-1c" href="">
     </div>
+    <div class="row slider-center">
+      <i id="next1" class="material-icons">keyboard_arrow_right</i>
+      <i id="prev1" class="material-icons">keyboard_arrow_left</i>
+    </div>
   </div>
 </div>
 
 <div class="row">
   <div class="col carousel carousel-slider center second-project-carousel">
-    <div data-position="top" data-tooltip="Slide Panel Left or Right for More" class="carousel-item red white-text carousel-item-div tooltipped" href="">
+    <div data-position="top" data-tooltip="Slide Panel Left or Right for More" class="carousel-item red white-text carousel-item-div" href="">
       <h2>Smaller Footprint</h2>
       <p class="white-text carousel-text">The goal of this application is to inspire users to create environmentally friendly habits and share them with friends and family.</p>
       <h6>Incorporated Technologies</h6>
@@ -102,12 +106,16 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
     </div>
     <div class="carousel-item blue white-text carousel-item-2d" href="">
     </div>
+    <div class="row slider-center">
+      <i id="next2" class="material-icons">keyboard_arrow_right</i>
+      <i id="prev2" class="material-icons">keyboard_arrow_left</i>
+    </div>
   </div>
 </div>
 
 <div class="row">
   <div class="col carousel carousel-slider center third-project-carousel">
-    <div data-position="top" data-tooltip="Slide Panel Left or Right for More" class="carousel-item blue white-text carousel-item-div tooltipped" href="">
+    <div data-position="top" data-tooltip="Slide Panel Left or Right for More" class="carousel-item blue white-text carousel-item-div" href="">
       <h2>MATCHMAKER</h2>
       <p class="white-text carousel-text">This "Bait and Switch" matchmaking app is ment to help raise awairness for local dogs in need of a home.</p>
       <h6>Incorporated Technologies</h6>
@@ -129,6 +137,10 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
     </div>
     <div class="carousel-item blue white-text carousel-item-3d" href="">
     </div>
+    <div class="row slider-center">
+      <i id="next3" class="material-icons">keyboard_arrow_right</i>
+      <i id="prev3" class="material-icons">keyboard_arrow_left</i>
+    </div>
   </div>
 </div>
 
@@ -140,7 +152,7 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
 <div id="start-of-comments" class="scrollspy" style="display: none;"></div>
 <div class="row">
   <div class="col">
-    <h4 class="green-text">Comments</h4>
+    <h4 class="green-text comments-heading">Comments</h4>
     <p class="underlined-text3 blue-text">
       Feel free to leave a comment below.
     </p>
@@ -162,7 +174,7 @@ Full-Stack Web Developer, who leans toward back-end work, successful in collabor
       </div>
     </div>
     <div class="row">
-      <div class="col s6 m6 l6 xl6">
+      <div class="col s6 m6 l3 xl3">
         <button style="width: 100%" id="submitComment" class="hoverable waves-effect tooltipped blue" data-position="bottom" data-tooltip="Submit Comment">
           <i class="fas fa-3x fa-plus amber-text"></i>
         </button>

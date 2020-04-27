@@ -17,6 +17,7 @@ $(document).ready(function(){
   $('.tooltipped').tooltip();
   // $(".indicator-item").css('background-color','blue')
   // $(".indicator-item.active").css('background-color','black')
+  calebCrumAnime();
 });
 
 // use later when themes have been added
@@ -26,17 +27,43 @@ $(document).ready(function(){
 
 // }
 
-
-
-anime({
-  targets: '.line-drawing-demo .lines path',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutSine',
-  duration: 1500,
-  delay: function(el, i) { return i * 250 },
-  direction: 'alternate',
-  loop: true
+// carousel arrows
+$('#prev1').click(function() {
+  $('.carousel.first-project-carousel').carousel('prev');
 });
+
+$('#next1').click(function() {
+  $('.carousel.first-project-carousel').carousel('next');
+});
+
+$('#prev2').click(function() {
+  $('.carousel.second-project-carousel').carousel('prev');
+});
+
+$('#next2').click(function() {
+  $('.carousel.second-project-carousel').carousel('next');
+});
+
+$('#prev3').click(function() {
+  $('.carousel.third-project-carousel').carousel('prev');
+});
+
+$('#next3').click(function() {
+  $('.carousel.third-project-carousel').carousel('next');
+});
+
+
+// anime.js
+// not being used yet
+// anime({
+//   targets: '.line-drawing-demo .lines path',
+//   strokeDashoffset: [anime.setDashoffset, 0],
+//   easing: 'easeInOutSine',
+//   duration: 1500,
+//   delay: function(el, i) { return i * 250 },
+//   direction: 'alternate',
+//   loop: true
+// });
 
 
 const setButtonColHeight = () => {
