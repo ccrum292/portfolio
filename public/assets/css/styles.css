@@ -273,6 +273,65 @@ button {
   font-weight: 800;
 }
 
+@media screen and (max-width: 500px) {
+  .carousel-item-1a {
+    background-image: url("../img/ec-home-small.png");
+    background-size: 100% 100%;
+  }
+  
+  .carousel-item-1b {
+    background-image: url("../img/ec-play-small.png");
+    background-size: 100% 100%;
+  }
+  
+  .carousel-item-1c {
+    background-image: url("../img/ec-read-small.png");
+    background-size: 100% 100%;
+  }
+  
+  .carousel-item-2a {
+    background-image: url("../img/smallerfootprint-home-small.png");
+    background-size: 100% 100%;
+  }
+  
+  .carousel-item-2b {
+    background-image: url("../img/smallerfootprint-login-small.png");
+    background-size: 100% 100%;
+  }
+  
+  .carousel-item-2c {
+    background-image: url("../img/smallerfootprint-score-small.png");
+    background-size: 100% 100%;
+  }
+  
+  .carousel-item-2d {
+    background-image: url("../img/smallerfootprint-friends-small.png");
+    background-size: 100% 100%;
+  }
+
+  .carousel-item-3a {
+    background-image: url("../img/matchmaker-home-small.png");
+    background-size: 100% 100%;
+  }
+  
+  .carousel-item-3b {
+    background-image: url("../img/matchmaker-bailey-small.png");
+    background-size: 100% 100%;
+  }
+  
+  .carousel-item-3c {
+    background-image: url("../img/matchmaker-my-matches.png");
+    background-size: 100% 100%;
+  }
+  
+  .carousel-item-3d {
+    background-image: url("../img/matchmaker-dev-contact.png");
+    background-size: 100% 100%;
+  }
+}
+
+
+
 /* .indicator-item {
   background-color: black;
 }
