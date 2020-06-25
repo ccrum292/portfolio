@@ -198,6 +198,7 @@ button {
   border-bottom: 4px solid  #ffc107 !important;
   border-left: 4px solid  #4CAF50 !important;
   border-top: 4px solid  #2196F3 !important;
+  border-radius: 4px;
 }
 
 .second-project-carousel {
@@ -205,6 +206,7 @@ button {
   border-left: 4px solid  #ffc107 !important;
   border-top: 4px solid  #4CAF50 !important;
   border-right: 4px solid  #2196F3 !important;
+  border-radius: 4px;
 }
 
 .third-project-carousel {
@@ -212,6 +214,7 @@ button {
   border-top: 4px solid  #ffc107 !important;
   border-right: 4px solid  #4CAF50 !important;
   border-bottom: 4px solid  #2196F3 !important;
+  border-radius: 4px;
 }
 
 .carousel-text {
