@@ -24,6 +24,10 @@ body::-webkit-scrollbar-track {
 	border-radius: 10px;
 }
 
+.title-div {
+	overflow: hidden;
+}
+
 .no-select {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
