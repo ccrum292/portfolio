@@ -88,7 +88,7 @@ const copyToClipboard = (event) => {
 	console.log($temp.val($(event).text()).select());
 	document.execCommand('copy');
 	$temp.remove();
-	$('.modal-content').append(`<p>Success!</p>`);
+	$('.modal-content').append(`<p>This feature is currently unavailable while I wait on an ssl certificate.  Please manually copy the email address above, thank you. </p>`);
 };
 
 $('.copy-button').click(() => copyToClipboard('#email-address'));
