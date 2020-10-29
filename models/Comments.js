@@ -1,3 +1,4 @@
+// now using MongoDB Atlas
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
