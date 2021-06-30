@@ -7,7 +7,6 @@ $(document).ready(function() {
 		indicators: true
 	});
 	$('.tabs').tabs();
-	setButtonColHeight();
 	$('.modal').modal();
 	$('input#input_text, textarea#textarea2').characterCounter();
 	getComments();
@@ -59,23 +58,6 @@ $('#prev4').click(function() {
 $('#next4').click(function() {
 	$('.carousel.fourth-project-carousel').carousel('next');
 });
-
-// anime.js
-// not being used yet
-// anime({
-//   targets: '.line-drawing-demo .lines path',
-//   strokeDashoffset: [anime.setDashoffset, 0],
-//   easing: 'easeInOutSine',
-//   duration: 1500,
-//   delay: function(el, i) { return i * 250 },
-//   direction: 'alternate',
-//   loop: true
-// });
-
-const setButtonColHeight = () => {
-	let pictureColHeight = $('.img-col')[0].scrollHeight;
-	$('.button-col').css('height', pictureColHeight);
-};
 
 const copyToClipboard = (event) => {
 	console.log('button clicked');

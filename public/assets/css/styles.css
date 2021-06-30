@@ -18,11 +18,20 @@ body::-webkit-scrollbar-thumb {
 	background-image: linear-gradient(to bottom, #f44336 0%, #2196f3 100%);
 }
 
+::-webkit-scrollbar-thumb:hover {
+	background-image: linear-gradient(to bottom, #ffc107 0%, #2196f3 100%);
+}
+
+::-webkit-scrollbar-thumb:active{
+	background-image: linear-gradient(to bottom, #4caf50 0%, #2196f3 100%);
+}
+
 body::-webkit-scrollbar-track {
 	/* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); */
 	background-color: #f5f5f5;
 	border-radius: 10px;
 }
+
 
 .title-div {
 	overflow: hidden;
@@ -66,7 +75,12 @@ i {
 .underlined-text {
 	border-bottom: 1px solid #2196f3 !important;
 	/* color: #ee6e73; */
-	padding-bottom: 5px;
+  margin-bottom: 34.5px;
+}
+
+.missionStatement {
+  margin-bottom: 0 !important;
+  padding-bottom: 5px;
 }
 
 .underlined-text2 {
@@ -76,7 +90,20 @@ i {
 
 .underlined-text3 {
 	border-bottom: 1px solid #f44336 !important;
-	padding-bottom: 5px;
+  margin-bottom: 34.5px;
+  padding-bottom: 0;
+}
+
+.sub-text-1 {
+  font-size: large;
+}
+
+/* .subText2 {
+
+} */
+
+.bold-font{
+  font-weight: bold;
 }
 
 img {
@@ -95,11 +122,15 @@ img {
 .img-col {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 35px;
+	/* margin-bottom: 35px; */
 }
 
 .col-button {
 	width: 100%;
+}
+
+.picture-row {
+  margin-bottom: 35px;
 }
 
 .red-button-border {
@@ -128,6 +159,12 @@ button {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+  flex-grow: 1;
+}
+
+.flex {
+  display: flex;
+  /* flex-wrap: wrap; */
 }
 
 #theme-div {
