@@ -160,11 +160,12 @@ button {
 	justify-content: space-between;
 	flex-direction: column;
   flex-grow: 1;
+  min-height: 340px !important;
 }
 
 .flex {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 #theme-div {
@@ -435,7 +436,21 @@ button {
 		background-image: url("../img/matchmaker-dev-contact.png");
 		background-size: 100% 100%;
 	}
+
+  .button-col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 340px !important;
+    margin-top: 35px;
+  }
+
+
 }
+
+
+
 
 /* .indicator-item {
   background-color: black;
