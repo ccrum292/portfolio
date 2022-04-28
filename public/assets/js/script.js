@@ -36,11 +36,11 @@ $('#next1').click(function() {
 });
 
 $('#prev2').click(function() {
-	$('.carousel.second-project-carousel').carousel('prev');
+	$('.carousel.fifth-project-carousel').carousel('prev');
 });
 
 $('#next2').click(function() {
-	$('.carousel.second-project-carousel').carousel('next');
+	$('.carousel.fifth-project-carousel').carousel('next');
 });
 
 $('#prev3').click(function() {
@@ -98,7 +98,7 @@ const getComments = () => {
 		let cssStyleHeading = 'alter-heading-4';
 		let cssStyleText = 'alter-text-4';
 		data.forEach((val) => {
-			// it else statement used to change color of heading and text for each entry
+			// if else statement used to change color of heading and text for each entry
 			if (cssStyleHeading === 'alter-heading-1') {
 				cssStyleHeading = 'alter-heading-2';
 				cssStyleText = 'alter-text-2';

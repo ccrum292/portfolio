@@ -187,37 +187,44 @@ button {
 
 .carousel-item-1a {
 	background-image: url("../img/exquisite-art-homepage.gif");
-	background-size: 100% 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .carousel-item-1b {
 	background-image: url("../img/exquisite-art-playpage.gif");
-	background-size: 100% 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .carousel-item-1c {
 	background-image: url("../img/exquisite-corpse-read.png");
-	background-size: 100% 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .carousel-item-2a {
-	background-image: url("../img/homepage.png");
-	background-size: 100% 100%;
+	background-image: url("../img/Login-Paperless-Fundraiser.gif");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .carousel-item-2b {
-	background-image: url("../img/login.png");
-	background-size: 100% 100%;
+	background-image: url("../img/Home-Paperless-Fundraiser.gif");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .carousel-item-2c {
-	background-image: url("../img/completedactions.png");
-	background-size: 100% 100%;
-}
-
-.carousel-item-2d {
-	background-image: url("../img/invitefriends.png");
-	background-size: 100% 100%;
+	background-image: url("../img/Shop-Paperless-Fundraiser.gif");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .carousel-item-3a {
@@ -277,6 +284,15 @@ button {
 	border-right: 4px solid #4caf50 !important;
 	border-bottom: 4px solid #2196f3 !important;
 	border-radius: 4px;
+}
+
+.fifth-project-carousel {
+  border-right: 4px solid #ffc107 !important;
+	border-bottom: 4px solid #4caf50 !important;
+	border-left: 4px solid #2196f3!important;
+	border-top: 4px solid #f44336 !important;
+	border-radius: 4px;
+
 }
 
 .carousel-text {
@@ -397,7 +413,7 @@ button {
 		background-size: 100% 100%;
 	}
 
-	.carousel-item-2a {
+	/* .carousel-item-2a {
 		background-image: url("../img/smallerfootprint-home-small.png");
 		background-size: 100% 100%;
 	}
@@ -415,7 +431,7 @@ button {
 	.carousel-item-2d {
 		background-image: url("../img/smallerfootprint-friends-small.png");
 		background-size: 100% 100%;
-	}
+	} */
 
 	.carousel-item-3a {
 		background-image: url("../img/matchmaker-home-small.png");
